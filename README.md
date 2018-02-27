@@ -1,5 +1,4 @@
 Simple react application
-
-cd app
-npm install
-npm start
+<li>cd app</li>
+<li>npm install</li>
+<li>npm start</li>
