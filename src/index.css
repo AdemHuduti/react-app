@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(90deg, #136a8a, #267871); */
+}
+button {
+  cursor: pointer;
+}
+
+.btn-6d {
+  border: 2px dashed #226fbe;
+  background: #226fbe;
+  color: #eee;
+}
+
+.btn-6d:hover {
+	background: transparent;
+	color: #226fbe;
+  cursor: pointer;
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.hoverClass:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px;
+}
+
+.search-bar {
+  margin: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 75%;
+  padding: 5px;
+  border-radius: 6px;
+  border: 3px solid #eee;
+}
+
+.search-bar-TODO {
+  width: 35%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #226fbe;
+}
+
+.bolder {
+  font-weight: 500;
+}
+.size {
+  font-size: 2rem;
+}
+
+
+/* http://jsonplaceholder.typicode.com/users */
+/* https://fbredux.firebaseio.com/ */
