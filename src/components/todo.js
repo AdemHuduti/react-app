@@ -7,8 +7,7 @@ export default class Todo extends React.Component {
 
         this.state = {
             iNeedTo: [],
-            listOfTodos: '',
-            errors: ''
+            listOfTodos: ''
         };
     }
 
@@ -29,13 +28,7 @@ export default class Todo extends React.Component {
         });
         this.setState({
             listOfTodos: ''
-        });
-        if(!this.state.listOfTodos) {
-            this.setState(() => ({errors: 'Please enter a valid value. Click on the X and continue'}));
-        }
-        else {
-            this.setState(() => ({errors: ''}))
-        }   
+        });   
     };
 
     randomItem() {
@@ -93,7 +86,6 @@ export default class Todo extends React.Component {
         return (
             <div className="container text-center">
                 <h1 className="display-4 bolder">Simple Todo App</h1>
-                {this.state.errors && <h3 className="text-danger">{this.state.errors}</h3>}
                 <ul className="col-md-4 mx-auto">
                     {myTodo}
                 </ul>
@@ -105,7 +97,7 @@ export default class Todo extends React.Component {
                         onChange={this.onChangeInput.bind(this)}
                         />
                         <p className="mt-4">    
-                            <button onClick={this.addTodo.bind(this)} className="btn btn-6 btn-6d mr-2 " type="submit">Add</button>
+                            <button disabled={this.state.listOfTodos.length === 0} onClick={this.addTodo.bind(this)} className="btn btn-6 btn-6d mr-2 " type="submit">Add</button>
                             <button onClick={this.randomItem.bind(this)} className="btn btn-6 btn-6d">I need to..</button>
                             <Link to="/pick"  className="btn btn-6 btn-6d ml-2">Back</Link>
                         </p>
