@@ -1,4 +1,4 @@
-Simple react application
+<p>Simple react application</p>
 <small>
   The form on first page is not connected with any server. It is just simple form. You can skip in by clicking submit.
 </small>
