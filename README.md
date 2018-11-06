@@ -1,9 +1,9 @@
 # Simple react application
+The form on first page is not connected with any server. It is just simple form. You can skip in by clicking submit.
 ```
-  The form on first page is not connected with any server. It is just simple form. You can skip in by clicking submit.
-
-<li>cd app</li>
-<li>npm install</li>
-<li>npm start</li>
-<p>Visit localhost:3000</p>
+git clone: https://github.com/AdemHuduti/react-app.git
+cd app
+npm install
+npm start
+#Visit localhost:3000
 ```
